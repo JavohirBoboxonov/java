@@ -11,7 +11,6 @@
 # -- ('Ali Valiyev', 'alivali@gmail.com', '12345', now()),
 # -- ('Dilshod Ganiyev', 'dilshod@gmail.com', '14785', now());
 
-# -- ==================================================================
 
 # -- create table autors (
 # -- id serial primary key,
@@ -24,7 +23,6 @@
 # -- ('Ali Valiyev', 'Uzbekistan'),
 # -- ('Dilshod Ganiyev', 'Uzbekistan');
 
-# -- ====================================================
 
 # -- create table genres (
 # -- id  serial primary key,
@@ -36,7 +34,6 @@
 # -- ('Drama'),
 # -- ('Fantastika');
 
-# -- ========================================================
 
 # -- create table books(
 # -- id serial primary key,
@@ -53,7 +50,6 @@
 # -- ('Diqqat', 'Yaxshi kitob', 1997, 1, 1, now()),
 # -- ('Savol', 'Yaxshi kitob', 1998, 2, 2, now());
 
-# -- =====================================================
 
 # -- create table comments(
 # -- id serial primary key,
@@ -62,14 +58,7 @@
 # -- content text,
 # -- created_at timestamp
 # -- );
-
-# -- INSERT INTO comments (user_id, book_id, content, created_at)
-# -- VALUES
-# -- (1, 1, 'Ajoyib kitob', NOW()),
-# -- (2, 2, 'Kitob juda qiziqarli', NOW());
-
-# -- =====================================================
-
+                # Masalar
 # -- 1) masala
 # -- select * from books
 # -- order by published_year
@@ -86,8 +75,8 @@
 # -- where c.id is null;
 
 # -- 4) masala
-# -- SELECT a.full_name, COUNT(b.id) AS book_count FROM authors a
-# -- LEFT JOIN books b ON b.author_id = a.id
-# -- GROUP BY a.id, a.full_name
-# -- ORDER BY book_count DESC
+# -- SELECT a.full_name, COUNT(b.id) as book_count from authors a
+# -- left join books b ON b.author_id = a.id
+# -- group by a.id, a.full_name
+# -- order by book_count DESC
 # -- limit 5;
