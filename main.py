@@ -75,8 +75,8 @@
 # -- where c.id is null;
 
 # -- 4) masala
-# -- SELECT a.full_name, COUNT(b.id) as book_count from authors a
-# -- left join books b ON b.author_id = a.id
+# -- SELECT a.full_name, COUNT(b.id) as book_count from autors a
+# -- left join books b ON b.autor_id = a.id
 # -- group by a.id, a.full_name
 # -- order by book_count DESC
 # -- limit 5;
